@@ -3,9 +3,7 @@ $(document).keydown(function(e) {
   kkeys.push( e.keyCode );
   if ( kkeys.toString().indexOf( konami ) >= 0 ){
     $(document).unbind('keydown',arguments.callee);
-    $.getScript('http://konami.dossmann.net/scarabify.js',function(){
-      scarabify_add();
-      $(document).keydown(scarabify_add);
-    });
+    scarabify_add();
+    $(document).keydown(scarabify_add);
   }
 });

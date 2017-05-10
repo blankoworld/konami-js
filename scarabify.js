@@ -1,7 +1,7 @@
 var scarabify_count = 0;
 scarabify_add = function() {
 	scarabify_count += 1;
-	var sfa_url = 'http://konami.dossmann.net/';
+	var sfa_url = './';
 	var file = 'dance_';
 	var count = 8;
 	if (Math.random() > .7) {
